@@ -1,0 +1,23 @@
+<?php include 'templates/head.phtml'; ?>
+<body>
+    <header>
+        <?php include 'templates/header.phtml'; ?>
+    </header>
+    <div id="content">
+        <main>
+            <?php
+                echo (isset($mess) ? $mess : null);
+            ?>
+            <?=$main?>
+        </main>
+        <nav>
+            <?=$nav?>
+        </nav>
+    </div>
+    <footer>
+        <?php include 'templates/footer.phtml'; ?>
+    </footer>
+
+    <script src="./ui/js/script.js"></script>
+</body>
+</html>
